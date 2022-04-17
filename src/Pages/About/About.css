@@ -1,0 +1,14 @@
+
+.about-container{
+    background-color: burlywood;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 30px;
+}
+
+.about-area img{
+width: 200px;
+height: 220px;
+margin-top: 20px;
+margin: 30px;
+}

@@ -1,0 +1,17 @@
+.blog-container{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   background-color: burlywood;
+}
+
+.row-container{
+    margin: 10px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:576px){
+    .row-container{
+        width: 100%;
+        margin: 5px;
+    }
+}
