@@ -13,7 +13,7 @@ const Trainer = ({ trainer }) => {
                 <div className="card-body">
                     <h5 className="card-title fw-bold fs-4   "  >{name}</h5>
                     <p className="card-text  ">All are professional and award winning Bodybuilder. And they are world famous</p>
-                    <a href="#" className="btn btn-warning"> SEE MORE</a>
+                    <a href="#" className="btn w-100 btn-warning"> SEE MORE</a>
                 </div>
             </div>
         </div>
