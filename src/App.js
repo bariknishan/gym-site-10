@@ -3,17 +3,20 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home/Home';
+import Footer from './Pages/SharedPage/Footer/Footer';
+import Header from './Pages/SharedPage/Header/Header';
 
 function App() {
   return (
     <div>
-      
-<Routes>
-  <Route path='/' element={<Home></Home>}></Route>
-  <Route path='/about' element={<About></About>}></Route>
-</Routes>
 
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+      </Routes>
 
+      <Footer></Footer>
 
     </div>
   );

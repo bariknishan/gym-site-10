@@ -1,0 +1,36 @@
+[
+
+{
+    "id": 1 ,
+    "name":"ABS CHALLANGE ",
+    "price": 3000,
+    "description":" We are providing six pack abbs body within 3 months. Grab the opportunity and join Our GYM",
+    "img":"https://i.ibb.co/1RSkjHT/service2.png"
+
+   
+
+},
+{
+    "id": 2 ,
+    "name":"BIG LEGS CHALLANGE",
+    "price": 3500,
+    "description":" We are providing Big legs training  within 4 months. Grab the opportunity and join Our GYM",
+    "img":" https://i.ibb.co/RHsCCzY/service4.png "
+
+
+
+},
+{
+    "id": 3 ,
+    "name":"LYN BACK CHALLENGE",
+    "price": 3300,
+    "description":" We are providing BIG LYN  back within 3.5 months. Grab the opportunity and join Our GYM",
+    "img":"https://i.ibb.co/8D5cPC2/service1.png"
+
+
+
+}
+
+
+
+]
