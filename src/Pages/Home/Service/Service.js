@@ -10,8 +10,8 @@ const { img, name, price ,description}= service ;
             <img className='w-100  h-50' src={img} alt="" />
             <h2 className='mt-4 fw-bold' >{name}</h2>
              <p>PRICE:{price}BDT</p>
-             <p className='fs-5' >{description}</p>
-             <button className='btn  bg-warning p-2 mb-4'>Book This Packages</button>
+             <p className='fw-bold' >{description}</p>
+             <button className='btn  bg-warning p-2 mb-4'>BOOK THIS PACKAGE</button>
         </div>
     );
 };
