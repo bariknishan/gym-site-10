@@ -21,7 +21,7 @@ const Trainers = () => {
 
     return (
         <div className='container'  id='trainers'>
-            <h2  className='text-center fs-1 mt-5  text-warning  fw-bold'> SEE OUR TRAINERS</h2>
+            <h2  className='text-center fs-1 mt-5  text-warning  fw-bold'> SEE MY TRAINERS</h2>
 
 
             <div className="row">
