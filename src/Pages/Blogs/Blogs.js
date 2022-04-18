@@ -42,7 +42,7 @@ const Blogs = () => {
 
                   <li>Cloud Storage.</li>
                   <li>Cloud filestore.</li>
-                  <li> Firebase Realtine Database.</li>
+                  <li> Firebase Realtime Database.</li>
                   <li> Firebase Hosting.</li>
                     
                 </div>

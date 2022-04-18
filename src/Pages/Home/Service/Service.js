@@ -9,7 +9,7 @@ const { id,img, name, price ,description}= service ;
 const navigate = useNavigate()
 
 const navigateToCheckout = id =>{
-    navigate(`/service/${id}`)
+    navigate(`/checkout/${id}`)
 
 }
 

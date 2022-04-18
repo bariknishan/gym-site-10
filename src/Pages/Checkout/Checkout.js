@@ -5,8 +5,9 @@ const Checkout = () => {
 
     const {serviceId}= useParams()
     return (
-        <div>
-            <h2>Checkout This Service:{serviceId}</h2>
+        <div className='text-center mt-4 '>
+            <h2>You have selecteed package no:{serviceId}</h2>
+            <p> Thank you for visiting Our website...</p>
         </div>
     );
 };

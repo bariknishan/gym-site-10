@@ -1,27 +1,51 @@
 
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import './Login.css'
 
 const Login = () => {
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+
+
+
+
+
+
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate()
+
+    
     const handleSubmit = event => {
         event.preventDefault()
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(email, password)
+       signInWithEmailAndPassword(email,password)
+    }
+
+    if(user){
+        navigate('/home')
     }
 
     const navigateToRegister = event => {
         navigate('/register')
     }
 
+
+
+
     return (
 
-        <div className='log-container w-50 mx-auto'>
+        <div className='log-container w-50 mx-auto mb-4'>
             <h2 className='text-primary text-center  mt-4 ' > LOG IN HERE</h2>
 
             <Form onSubmit={handleSubmit} >
@@ -45,7 +69,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p >New To Fitnes Mania? <span className='text-danger' onClick={navigateToRegister} >Register here?</span></p>
+    <p >New To Fitnes Mania? <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateToRegister} >Register here?</Link></p>
 
         </div>
     );
