@@ -9,12 +9,12 @@ const Header = () => {
 
     const [user]=useAuthState(auth);
   
-    const handleSignOut=()=>{
+    const handleSignOut=()=>{   //// signout system
         signOut(auth)
     }
 
 
-
+ ////////////////// header are/////////////////////////
 
 
     return (
@@ -37,7 +37,7 @@ const Header = () => {
                      user ? 
                      <button  onClick={handleSignOut} className='btn btn-warning ms-4 fw-bold'>Sign Out</button>
                      :
-                     <Nav.Link as={Link} to="login" className='fw-bold fs-6 ' >
+                     <Nav.Link as={Link} to="login" className='fw-bold fs-6 ' > 
                             LOGIN
                         </Nav.Link>  
                         }

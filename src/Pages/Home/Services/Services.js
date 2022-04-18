@@ -6,6 +6,9 @@ const Services = () => {
 
     const [services, setServices] = useState([]);
 
+    ////////// -------------data load fromhsin file--------------/////////////
+
+
     useEffect(() => {
         fetch('services.json')
             .then(res => res.json())
@@ -13,6 +16,8 @@ const Services = () => {
 
     }, []);
 
+
+        
 
     return (
         <div       id='services' className='mt-4'>

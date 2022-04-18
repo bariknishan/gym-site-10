@@ -10,6 +10,8 @@ const About = () => {
                 <img src={pic} alt="" />
             </div>
 
+{/* /////////////  about me with simple introduction */}
+
             <div className="para">
                 <p>Hello! Im am Abdul Barek. I am from Dinajpur.But Now I am living in Dhaka. I have completed my   graduation <br />
                     in CSE from University Of Development Alternative 2021. My Dream is to become software Developer one day. <br />
