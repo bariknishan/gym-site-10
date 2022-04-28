@@ -5,7 +5,7 @@ import './Service.css'
 const Service = ({service}) => {
 
 
-const { id,img, name, price ,description}= service ;
+const { _id,img, name, price ,description}= service ;
 const navigate = useNavigate()
 
 const navigateToCheckout = id =>{
@@ -19,7 +19,7 @@ const navigateToCheckout = id =>{
             <h2 className='mt-4 fw-bold' >{name}</h2>
              <p>PRICE:{price}BDT</p>
              <p className='fw-bold' >{description}</p>
-             <button onClick={()=>navigateToCheckout(id)}  className='btn  bg-warning p-2 mb-4'>BOOK THIS PACKAGE</button>
+             <button onClick={()=>navigateToCheckout(_id)}  className='btn  bg-warning p-2 mb-4'>BOOK THIS PACKAGE</button>
         </div>
     );
 };
